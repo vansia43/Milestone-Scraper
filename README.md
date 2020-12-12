@@ -5,6 +5,7 @@ If you want to download data from a GitHub repository's milestone, you can use t
 Before using the Milestone Scraper, ensure that you have the following prerequisites downloaded and installed:
 - Python 3
 - Jupyter Notebook
+- ChromeDriver - If you do not have Chrome browser, you can use another browser's driver.
 
 # Using the Milestone Scraper
 ## Step 1: 

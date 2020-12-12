@@ -1,13 +1,26 @@
 # Milestone-Scraper
 # Overview
-The GitHub API offers a number of ways to extract data from issue lists and other endpoints. If you want to download issues and pull requests (PRs) that are added to a repository's milestone, however, you can use this module to create a list of issues and PRs that are associated with the milestone. The Milestone Scraper parses the raw HTML to create a list of issues and PRs ID, link, and title. This information can be helpful when developing reports or release notes, outside of GitHub.
+If you want to download data from a GitHub repository's milestone, you can use this Jupyter Notebook to create a list of issues and PRs that are associated with the milestone. The Milestone Scraper parses raw HTML to create a list of issues and PRs by title, link, and ID. This information can be helpful when developing reports or release notes, outside of GitHub.
 # Prerequisites
 Before using the Milestone Scraper, ensure that you have the following prerequisites downloaded and installed:
-- **Beautiful Soup**: Beautiful Soup is a Python library that works along with a parser to pull data from HTML and XML libraries. See the [Beautiful Soup Installation Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup) for information on how to install the library.
-- **An HTML parser**: You can use any HTML parser along with Beautiful Soup to parse the downloaded HTML. Python 3 has a [built-in HTML parser](https://docs.python.org/3/library/html.parser.html).
+- Python 3
+- Jupyter Notebook
 
 # Using the Milestone Scraper
-## Step 1: x
-xxx
-## Step 2: x
-xxx
+## Step 1: 
+Open the template.ipynb file. 
+## Step 2:
+Update the `URL` variable with the URL for the milestone page. 
+## Step 3:
+Run all commands at the same time.
+
+The output is generated at the bottom of the notebook in the following format: 
+~~~~
+Issue or PR Title
+https://github.com/samplerepo/pull/123
+123
+~~~~
+Issues and PRs that are associated with the milsteone are treated the same way in the output. You can copy and paste the output for use in another program.
+
+# Additional Information
+The Milestone Scraper uses Selenium to automate launching a browser. The `headless` option is set to `true`, which prevents the browser from actually launching. As a result, all work is completed in the background. A `wait` option is set to `10` seconds. Without this option, the JavaScript does not load fast enough for Selenium to pick up the data. The scraper gets the page source. Then, the page source is parsed using [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup). Beautiful Soup is a Python library that works along with a parser to pull data from HTML and XML libraries. Beautiful Soup finds all of the HTML sections for the milestone page. The module iterates over each element to get the title, link, and ID. The output is displayed for use in other contexts.

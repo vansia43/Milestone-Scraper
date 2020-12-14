@@ -9,7 +9,7 @@ Before using the Milestone Scraper, ensure that you have the following prerequis
 
 # Using the Milestone Scraper
 ## Step 1: 
-Open the template.ipynb file. 
+Open the [template.ipynb](template.ipynb) file. 
 ## Step 2:
 Update the `URL` variable with the URL for the milestone page. 
 ## Step 3:

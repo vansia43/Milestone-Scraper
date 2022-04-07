@@ -1,6 +1,6 @@
 # Milestone-Scraper
 # Overview
-If you want to download data from a GitHub repository's milestone, you can use this Jupyter Notebook to create a list of issues and PRs that are associated with the milestone. The Milestone Scraper parses raw HTML to create a list of issues and PRs by title, link, and ID. This information can be helpful when developing reports or release notes, outside of GitHub.
+If you want to download data from a GitHub repository's milestone, you can use this Jupyter Notebook to create a list of issues and pull requests (PRs) that are associated with the milestone. The Milestone Scraper parses raw HTML to create a list of issues and PRs by title, link, and ID. This information can be helpful when developing reports or release notes, outside of GitHub.
 # Prerequisites
 Before using the Milestone Scraper, ensure that you have the following prerequisites downloaded and installed:
 - Python 3
